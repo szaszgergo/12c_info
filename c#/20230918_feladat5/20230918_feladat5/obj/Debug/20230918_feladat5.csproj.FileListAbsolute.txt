@@ -1,0 +1,11 @@
+C:\Users\Gergő\Desktop\c#\20230918_feladat5\20230918_feladat5\bin\Debug\20230918_feladat5.exe.config
+C:\Users\Gergő\Desktop\c#\20230918_feladat5\20230918_feladat5\bin\Debug\20230918_feladat5.exe
+C:\Users\Gergő\Desktop\c#\20230918_feladat5\20230918_feladat5\bin\Debug\20230918_feladat5.pdb
+C:\Users\Gergő\Desktop\c#\20230918_feladat5\20230918_feladat5\obj\Debug\20230918_feladat5.csproj.AssemblyReference.cache
+C:\Users\Gergő\Desktop\c#\20230918_feladat5\20230918_feladat5\obj\Debug\20230918_feladat5.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gergő\Desktop\c#\20230918_feladat5\20230918_feladat5\obj\Debug\_20230918_feladat5.Form1.resources
+C:\Users\Gergő\Desktop\c#\20230918_feladat5\20230918_feladat5\obj\Debug\_20230918_feladat5.Properties.Resources.resources
+C:\Users\Gergő\Desktop\c#\20230918_feladat5\20230918_feladat5\obj\Debug\20230918_feladat5.csproj.GenerateResource.cache
+C:\Users\Gergő\Desktop\c#\20230918_feladat5\20230918_feladat5\obj\Debug\20230918_feladat5.csproj.CoreCompileInputs.cache
+C:\Users\Gergő\Desktop\c#\20230918_feladat5\20230918_feladat5\obj\Debug\20230918_feladat5.exe
+C:\Users\Gergő\Desktop\c#\20230918_feladat5\20230918_feladat5\obj\Debug\20230918_feladat5.pdb
