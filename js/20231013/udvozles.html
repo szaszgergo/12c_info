@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Üdvözlés</h2>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input id="fnamegomb" type="button" value="Üdvözlés">
+    </form>
+    <p id="result"></p>
+    <script>
+        function Udvozles() {
+         
+            let nev = document.getElementById("fname").value;
+            if (nev!="") {
+            document.getElementById("result").innerHTML = "Üdvözöllek " + nev + "!"
+            document.getElementById("result").style.color="black";
+
+                
+            }
+            else{
+                
+            document.getElementById("result").innerHTML = "Adj meg egy nevet!"
+            document.getElementById("result").style.color="red";
+
+
+            }
+        }
+        document.querySelector("#fnamegomb").onclick = Udvozles;
+
+    </script>
+</body>
+
+</html>

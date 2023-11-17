@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+input{
+    width: 10%;
+}    
+body{
+    text-align: center;
+}
+#szamol{
+    margin-top:10px ;
+    margin-left:-18px ;
+
+   width: 11%;
+}
+
+
+</style>
+
+<div><input id="elso" type="number"> *x <sup>2</sup> <input id="masodik" type="number">*x+ <input id="harmadik" type="number"> = 0 
+<br>
+<input type='button'   value="Számol" id="szamol"> 
+</div>
+<hr>
+
+<p id="hiba"></p>
+
+<div id="nemlathato">x <sub>1</sub>= <span id="eredmenyX"></span></div>
+
+<div id="nemlathato2">x <sub>2</sub>= <span id="eredmenyY"></span></div> 
+
+
+
+
+
+
+<script>
+    function Szamol() {
+        
+              let  elsoszam = parseFloat(document.getElementById("elso").value);
+              let  masodikszam = parseFloat(document.getElementById("masodik").value);
+              let harmadikszam = parseFloat(document.getElementById("harmadik").value);
+
+               
+        
+                    
+               let d = Math.pow(masodikszam, 2) - 4 * elsoszam * harmadikszam;
+
+
+               if (d == 0) {
+                    x1 = (-masodikszam + Math.sqrt(d)) / (2 * elsoszam);
+                    document.getElementById("nemlathato2").style.visibility = "hidden";
+                } 
+
+
+                else if (d > 0 ) {
+
+                    x1 = (-masodikszam + Math.sqrt(d)) / (2 * elsoszam);
+                    x2 = (-masodikszam - Math.sqrt(d)) / (2 * elsoszam); 
+                }
+            
+                else {
+                  document.getElementById("nemlathato").style.visibility = "hidden";
+                  document.getElementById("nemlathato2").style.visibility = "hidden";
+                  document.getElementById("eredmenyX").style.visibility = "hidden";
+                   document.getElementById("eredmenyY").style.visibility = "hidden";
+                    document.getElementById("hiba").innerHTML="Nincs eredmény";
+                
+
+                    
+                }
+             
+
+                document.getElementById('eredmenyX').innerHTML = x1;
+                document.getElementById('eredmenyY').innerHTML = x2;
+    }
+
+document.querySelector("#szamol").onclick = Szamol;
+
+        
+
+
+    </script>
+</body>
+</html>

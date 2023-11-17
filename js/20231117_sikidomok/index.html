@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sikidomok</title>
+</head>
+<body>
+
+<form class='sikidom' name='teglalap'>
+
+
+	<h4> A téglalap </h4>
+
+	<b>Kiindulási adatok:</b><br>
+
+
+	<span><i><b>'a'</b></i> oldal hossza: </span> <input name='a' id="a" size=5> cm <br>
+	<span><i><b>'b'</b></i> oldal hossza: </span> <input name='b' id="b" size=5> cm <br>
+
+	<span> </span>                                <input type=button value='Számol' id="szamol">
+
+
+	<hr>
+
+
+	<b>Eredmények:</b><br>
+
+
+	<span>Kerület: </span>                        <input name='K' id="k" size=10 readonly> cm <br>
+	<span>Terület: </span>                        <input name='T' id="t" size=10 readonly> cm<sup>2</sup>
+
+
+</form>
+
+
+
+
+<script>
+
+
+    function szamol(a,b)
+    {
+       
+        if (a > 0 && b>0) {
+            let Kerulet = 2*(a+b);
+            let Terulet = a*b;
+            document.getElementById("k").value=Kerulet;
+            document.getElementById("t").value=Terulet;
+        }
+        else{
+            
+            alert("Nem lehet megadni - számot!");
+            
+        }
+    }
+
+    document.getElementById("szamol").onclick=function(){
+        let a =  parseFloat(document.getElementById("a").value);
+        let b =  parseFloat(document.getElementById("b").value);
+        szamol(a,b)
+    }
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

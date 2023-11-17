@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kor</title>
+</head>
+<body>
+  <style>
+    #dot{
+        width: 100px;
+        height: 100px;
+
+        border-radius: 50%;
+        border: black solid 1px;
+        background-color: green;
+      
+    }
+  </style>
+  <button id="kor">Kör</button>
+  <p id="eredmeny"></p>
+<div id="dot">
+    <span></span>
+</div>
+
+
+
+<script>
+function Veletlen(){
+    let r = Math.round( Math.random()*50);
+    if (r>0) {
+    
+        
+        document.getElementById("eredmeny").innerHTML=r*2;
+       
+
+    }
+    else{
+        document.write(" A kör sugara 0. ")
+    }
+    
+    document.getElementById("dot").style.width=`${r*2}px`;
+    document.getElementById("dot").style.height=`${r*2}px`;
+ 
+}
+
+document.getElementById("kor").onclick=Veletlen;
+
+ 
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

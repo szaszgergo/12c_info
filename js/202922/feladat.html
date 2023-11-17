@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampa</title>
+</head>
+<body>
+    <button id="le">Le</button>
+    <img id="kep" src="pic_bulboff.gif" >
+  
+
+
+    <button id="fel">Fel</button>
+
+
+
+    <script>
+        
+
+        function kapcsol_fel(){
+            
+            document.getElementById("kep").src = "pic_bulbon.gif";
+        }
+        function kapcsol_le(){
+            document.getElementById("kep").src = "pic_bulboff.gif";
+        }
+        document.getElementById("kep").onmouseover=kapcsol_fel;
+        document.getElementById("kep").onmouseout=kapcsol_le;
+
+        document.getElementById("fel").onclick=kapcsol_fel;
+        document.getElementById("le").onclick=kapcsol_le;
+        
+
+    </script>
+</body>
+</html>

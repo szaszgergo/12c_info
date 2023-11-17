@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="rendeles.js" defer></script>
+    <title>Rendeles</title>
+</head>
+<body>
+
+    <form > 
+    <label for="termek">Válasszon terméket:</label>
+
+        <select name="termek" id="termek">
+          <option value="alma">alma</option>
+          <option value="korte">körte</option>
+          <option value="szilva">szilva</option>
+          <option value="banan">banán</option>
+        </select> <br> <br>
+        
+        <label for="mennyiseg">Mennyiség:</label>
+        <input type="number" name="mennyiseg" id="mennyiseg" min="1" max="10" value="1">
+        <br> <br>
+        <input type="button" value="Rendelés">
+    </form>
+    <br>
+    <div>
+        Egységár: <span id="egysegar">0</span>Ft/kg
+    </div>
+    <div>
+        Fizetendő: <span id="fizetendo">0</span>Ft
+    </div>
+
+</body>
+</html>

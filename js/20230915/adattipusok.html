@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valtozok</title>
+</head>
+<body>
+    <style>
+        body{
+            font-size: 100px;
+        }
+    </style>
+    <script>
+        let a = 3    //var  , let ,const
+        const b = 3.14 
+        
+        const cars = ["Audi","Ford","Opel","Toyota"]
+        for (let i = 0; i < cars.length; i++) {
+            document.write(cars[i])
+        }
+document.write(" <br>")
+
+        for (const car of cars) {
+            document.write(car)
+        }
+        
+        document.write(" <br>")
+
+        for (const key in cars) {
+            
+
+            document.write(cars[key])
+        }
+
+        let user = {
+            nev:"Joe",
+            szulido:2005,
+            szulhely:"Budapest"
+        }
+
+document.write(" <br>")
+
+        for (const key in user) {
+            document.write(user[key]," ")
+        }
+
+        let a_oldal = 4
+        let b_oldal = 5
+        
+       function terulet(a_oldal,b_oldal){
+           return a*b
+        }
+        function kerulet(a_oldal,b_oldal){
+            szamolas= 2*a_oldal + 2*b_oldal
+            return szamolas
+        }
+        document.write("<br>")
+
+         document.write(terulet(a_oldal,b_oldal))
+         document.write("<br>")
+
+         document.write(kerulet(a_oldal,b_oldal))
+
+        document.write("<br>")
+
+
+        let r = 10 
+
+        function kor_szamolas(r){
+            szamolas = 2*r*Math.PI
+            return szamolas.toFixed(2)
+        }
+        document.write(kor_szamolas(r))
+
+
+        
+    </script>
+</body>
+</html>

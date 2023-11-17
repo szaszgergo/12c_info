@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kartya</title>
+</head>
+<body>
+<style>
+    #alap{
+        width: 20%;
+        height: 20%;
+    }
+</style>
+
+    <img id="alap"src="1_of_clubs.png" alt="">
+<script>
+    function nyomd(){
+        document.getElementById("alap").src = "1_of_diamonds.png";
+    }
+    document.getElementById("alap").onclick=nyomd;
+
+    function rajta(){
+        document.getElementById("alap").src = "1_of_hearts.png";
+    }
+    document.getElementById("alap").onmouseover=rajta;
+
+
+    function nemrajta(){
+        document.getElementById("alap").src = "1_of_spades.png";
+    }
+    document.getElementById("alap").onmouseout=nemrajta;
+</script>
+
+</body>
+
+</html>

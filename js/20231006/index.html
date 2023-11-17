@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teglalapcucc</title>
+</head>
+<body>
+    <style>
+
+    </style>
+<button id="teg" >random számok</button>
+<p id="ki"></p>
+<p id="ki2"></p>
+<p id="terulet"></p>
+
+<div>
+    <span class="dot"></span>
+    
+</div>
+
+
+    <script>
+
+function radomszam(){
+    let a = Math.floor(Math.random()*(100+20+1))-20;
+    let b = Math.floor(Math.random()*(100+20+1))-20;
+    
+    if (a>=0 && b>=0){
+        document.getElementById("ki").innerHTML = a;
+        document.getElementById("ki2").innerHTML = b;
+        let terulet = a*b 
+        document.getElementById("terulet").innerHTML = "Terület:" +  terulet +"cm2";
+
+
+    }
+    else{
+       
+    }
+
+   
+}
+
+document.getElementById("teg").addEventListener("click", radomszam);
+
+
+    </script>
+</body>
+</html>

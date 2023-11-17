@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kör</title>
+</head>
+<body>
+    <style>
+       .dot {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  border: black solid  1px ;
+}
+    </style>
+
+<div >
+    <span class="dot"></span>
+</div>
+<button id="kek">Szinezes</button>
+<button id="veletlen">Véletlen szín</button>
+<p id="szinkod"></p>
+
+
+
+    <script>
+        /*
+       r= Math.floor(Math.random()*16)
+       g = Math.floor(Math.random()*16)
+       b  = Math.floor(Math.random()*16)
+    szin='#' + r.toString(16)  +g.toString(16)+ b.toString(16)
+    document.write(szin)   
+                          
+        document.write('<span class="kor" style="background-color: ',szin,';" ></span>')
+*/
+function veletlenszin(){
+    let red = Math.floor(Math.random()*256).toString(16).padStart(2,0).toUpperCase()
+    let green = Math.floor(Math.random()*256).toString(16).padStart(2,0).toUpperCase()
+    let blue = Math.floor(Math.random()*256).toString(16).padStart(2,0).toUpperCase()
+    let color = "#"+red +green+blue;
+    
+
+    return color;
+
+
+
+}
+
+document.getElementById("veletlen").onclick= function (){
+    let color =veletlenszin()
+    
+    document.getElementById("szinkod").innerHTML=color;
+    
+    document.querySelector(".dot").style.backgroundColor = color;
+    
+}
+
+function kekszin(){
+    document.querySelector(".dot").style.backgroundColor = "blue";
+
+}
+document.getElementById("kek").addEventListener("click",kekszin)
+
+function rajta(){
+    document.querySelector(".dot").style.backgroundColor = "olive";
+
+}
+document.querySelector("#kek").addEventListener("mouseover",rajta)
+
+
+function nemrajta(){
+    document.querySelector(".dot").style.backgroundColor = "orange";
+
+}
+document.querySelector("#kek").addEventListener("mouseout",nemrajta)
+
+
+document.querySelector(".dot").onmouseover=rajta 
+document.querySelector(".dot").onmouseout=nemrajta 
+
+
+/*
+ez is jó megoldás a kék színre 
+document.getElementById("kek").onclick=function(){
+    document.querySelector(".dot").style.backgroundColor = "#0000FF";
+}
+*/
+
+    </script>
+    
+</body>
+</html>
