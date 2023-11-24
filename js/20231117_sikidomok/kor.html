@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://infojegyzet.hu/webszerkesztes/javascript/sikidomok/sikidom.css' type='text/css' rel='stylesheet'>
+
+    <title>Kör számolása</title>
+</head>
+
+<body>
+
+
+
+
+    <form class='sikidom' name='kor'>
+
+        <h4> A kör </h4>
+
+        <b>Adatok:</b><br>
+
+
+
+
+
+        <span>A kör sugara: </span> <input name='r' id="r" size=9 onfocus=' torol(); ' onblur=' Szamolas(1); '> cm <br>
+        <span>A kör kerülete: </span> <input name='K' id="K" size=9 onfocus=' torol(); ' onblur=' Szamolas(2); '> cm
+        <br>
+        <span>A kör területe: </span> <input name='T' id="T" size=9 onfocus=' torol(); ' onblur=' Szamolas(3); '>
+        cm<sup>2</sup> <br><br>
+
+
+        <span> </span> <input type=button value='Számol'>
+
+
+
+    </form>
+
+    <script>
+
+
+        function torol() {
+            document.kor.r.value = ""
+            document.kor.K.value = ""
+            document.kor.T.value = ""
+        }
+
+        r.onfocus = torol
+        K.onfocus = torol
+        T.onfocus = torol
+
+
+        r.onblur = function () {
+            Szamolas(1)
+        }
+
+        function Szamolas(m) {
+            sugar = parseFloat(document.kor.r.value)
+            Ker = parseFloat(document.kor.K.value)
+            Ter = parseFloat(document.kor.T.value)
+
+            if (m == 1 && sugar > 0) {
+                Ker = 2 * sugar * Math.PI
+                Ter = sugar * sugar * Math.PI
+
+                document.kor.K.value = Math.round(Ker * 1000) / 1000        // 3 számjegyre keretítünk
+                document.kor.T.value = Math.round(Ter * 1000) / 1000
+            }
+            if (m == 2 && Ker > 0) {
+                sugar = Ker / 2 / Math.PI
+                Ter = sugar * sugar * Math.PI
+
+                document.kor.r.value = Math.round(sugar * 1000) / 1000
+                document.kor.T.value = Math.round(Ter * 1000) / 1000
+
+            }
+
+            if (m == 3 && Ter > 0) {
+                sugar = Math.sqrt(Ter / Math.PI)
+                Ker = 2 * sugar * Math.PI
+
+                document.kor.r.value = Math.round(sugar * 1000) / 1000
+                document.kor.K.value = Math.round(Ker * 1000) / 1000
+            }
+
+
+        }
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
