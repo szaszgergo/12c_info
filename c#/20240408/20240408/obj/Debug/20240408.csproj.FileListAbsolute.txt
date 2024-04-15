@@ -1,0 +1,15 @@
+Z:\12\asztali\20240408\20240408\20240408\bin\Debug\20240408.exe.config
+Z:\12\asztali\20240408\20240408\20240408\bin\Debug\20240408.exe
+Z:\12\asztali\20240408\20240408\20240408\bin\Debug\20240408.pdb
+Z:\12\asztali\20240408\20240408\20240408\obj\Debug\20240408.csproj.AssemblyReference.cache
+Z:\12\asztali\20240408\20240408\20240408\obj\Debug\MainWindow.g.cs
+Z:\12\asztali\20240408\20240408\20240408\obj\Debug\App.g.cs
+Z:\12\asztali\20240408\20240408\20240408\obj\Debug\20240408_MarkupCompile.cache
+Z:\12\asztali\20240408\20240408\20240408\obj\Debug\20240408_MarkupCompile.lref
+Z:\12\asztali\20240408\20240408\20240408\obj\Debug\MainWindow.baml
+Z:\12\asztali\20240408\20240408\20240408\obj\Debug\20240408.g.resources
+Z:\12\asztali\20240408\20240408\20240408\obj\Debug\_20240408.Properties.Resources.resources
+Z:\12\asztali\20240408\20240408\20240408\obj\Debug\20240408.csproj.GenerateResource.cache
+Z:\12\asztali\20240408\20240408\20240408\obj\Debug\20240408.csproj.CoreCompileInputs.cache
+Z:\12\asztali\20240408\20240408\20240408\obj\Debug\20240408.exe
+Z:\12\asztali\20240408\20240408\20240408\obj\Debug\20240408.pdb
