@@ -1,0 +1,16 @@
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\bin\Debug\fodraszat.exe.config
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\bin\Debug\fodraszat.exe
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\bin\Debug\fodraszat.pdb
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\fodraszat.csproj.AssemblyReference.cache
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\fodraszat.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\MainWindow.g.cs
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\App.g.cs
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\fodraszat_MarkupCompile.cache
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\fodraszat_MarkupCompile.lref
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\MainWindow.baml
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\fodraszat.g.resources
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\fodraszat.Properties.Resources.resources
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\fodraszat.csproj.GenerateResource.cache
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\fodraszat.csproj.CoreCompileInputs.cache
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\fodraszat.exe
+C:\Users\Gergő\Desktop\fodraszat\fodraszat\fodraszat\obj\Debug\fodraszat.pdb
